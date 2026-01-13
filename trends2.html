@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidé - Latest Fashion Trends</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #111;
+      font-size: 1.2rem;
+	  line-height: 1.7;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      padding: 10px 50px;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      margin-left: 15px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    /* underline hover */
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 2px;
+      background: white;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    /* underline active */
+    .navbar-nav .active::after {
+      transform: scaleX(1);
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    h5 {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .interaksi {
+      margin-top: 30px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+	  
+    .pagination-buttons {
+      display: flex;
+      justify-content: center; 
+      gap: 30px; 
+      margin-top: 30px;
+    }
+
+    .like-btn {
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+
+    .share-btn {
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+
+    .komentar-list {
+      margin-top: 15px;
+    }
+
+    .komentar-item {
+      border-bottom: 1px solid #eee;
+      padding: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-dark">
+    <div class="logo">
+      <a href="homepage.html">
+        <img src="./image/logo.png" alt="Confidé Logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="homepage.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">TRENDS</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips1.html">TIPS</a></li>
+        <li class="nav-item"><a class="nav-link" href="outfit1.html">OUTFIT</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories1.html">STORIES</a></li>
+      </ul>
+    </nav>
+  </header>
+	
+
+  <!-- Content -->
+  <main class="container py-5">
+    <h1 class="section-title">Latest Fashion Trends</h1>
+    <p>&nbsp;</p>
+	  
+  <!-- Opening Section -->
+  <div class="opening-section text-center mb-5">
+    <p align="left">
+      Setelah membahas streetwear yang identik dengan energi muda dan budaya jalanan, kita beralih ke sisi lain dunia fashion yang lebih tenang. Industri fashion nggak hanya tentang gaya yang keras dan penuh warna, tapi juga tentang ketenangan, kesederhanaan, dan kualitas yang tahan lama.
+    </p>
+    <p align="left">
+      Inilah tren kedua, <strong>Quiet Luxury atau Effortless Chic</strong>. Gaya ini menekankan esensi elegan tanpa harus banyak bicara, mengandalkan bahan premium dan potongan rapi. Sebelum masuk ke detail outfitnya, mari kita pahami dulu kenapa kesederhanaan justru bisa jadi simbol kemewahan di 2025.
+    </p>
+  </div>
+
+    <div class="row mt-4">
+      <!-- Gambar -->
+      <div class="col-md-4">
+        <img src="./image/effortlesschic1.jpg" class="img-fluid mb-3" alt="effortless chic">
+        <img src="./image/effortlesschic2.jpg" class="img-fluid mb-3" alt="effortless chic">
+        <img src="./image/effortlesschic3.jpg" class="img-fluid mb-3" alt="effortless chic">
+      </div>
+
+      <!-- Teks -->
+      <div class="col-md-8">
+        <h2>2. Quiet Luxury / Effortless Chic</h2>
+        <p>Di tengah tren fashion yang serba cepat, quiet luxury muncul sebagai simbol ketenangan dan kesederhanaan. Bukan soal pamer logo, melainkan tentang kualitas, potongan rapi, dan detail halus yang memancarkan kelas. Gaya ini mengajarkan bahwa “less is more”—kesan elegan justru hadir dari hal yang sederhana.</p>
+
+        <h5>Kenapa Populer?</h5>
+        <ul>
+          <li>Tampil elegan tanpa berlebihan.</li>
+          <li>Bisa dipakai di banyak kesempatan (kantor, coffee date, dinner).</li>
+          <li>Memberi kesan sophisticated walau simpel.</li>
+          <li>Sustainable karena fokus pada item timeless &amp; berkualitas.</li>
+        </ul>
+
+        <h5>Elemen Khas</h5>
+        <ul>
+          <li>Atasan: kemeja silk, cashmere sweater, basic tee premium.</li>
+          <li>Bawahan: tailored trousers, midi skirt, straight jeans.</li>
+          <li>Sepatu: loafers, ballet flats, simple heels.</li>
+          <li>Aksesori: tas structured minimalis, jam tangan klasik, perhiasan tipis.</li>
+        </ul>
+		  
+	    <h5>Style Guide</h5>
+        <ul>
+          <li>Inspirasi Styling: silk shirt + trousers + loafers.</li>
+          <li>Warna &amp; Motif: earthy tone, beige, ivory, navy.</li>
+          <li>Figur/Brand: The Row, Max Mara, Sofia Richie Grainge.</li>
+          <li>Cocok Dipakai: meeting kerja, semi-formal event, casual elegant.</li>
+          <li>Don’ts: jangan pakai bahan murahan—quiet luxury = kualitas.</li>
+        </ul>
+      </div>
+    </div>
+	  
+    <div class="pagination-buttons">
+      <a href="trends1.html" class="btn btn-dark">← Prev</a>
+      <a href="trends3.html" class="btn btn-dark">Next →</a>
+    </div>
+
+    <!-- Interaksi -->
+    <div class="interaksi">
+      <span class="like-btn" onclick="toggleLike()">❤️ <span id="likeCount">0</span></span>
+      <span class="share-btn" onclick="sharePost()">🔗 Share</span>
+
+      <!-- Form Komentar -->
+      <div class="mt-3">
+        <h5>Comment</h5>
+        <textarea id="komenInput" class="form-control" rows="2" placeholder="Write a comment..."></textarea>
+        <button class="btn btn-dark mt-2" onclick="addComment()">Send</button>
+      </div>
+
+      <!-- Daftar Komentar -->
+      <div class="komentar-list" id="komentarList"></div>
+    </div>
+	  
+</main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light">
+    <small>&copy; 2025 Confidé. All Rights Reserved.</small>
+  </footer>
+
+  <!-- Script Interaksi -->
+<script>
+    let liked = false;
+    let likeCount = 0;
+
+    function toggleLike() {
+      liked = !liked;
+      if (liked) {
+        likeCount++;
+      } else {
+        likeCount--;
+      }
+      document.getElementById("likeCount").textContent = likeCount;
+    }
+
+    function addComment() {
+      const komenInput = document.getElementById("komenInput");
+      const komentarList = document.getElementById("komentarList");
+
+      if (komenInput.value.trim() !== "") {
+        const div = document.createElement("div");
+        div.className = "komentar-item";
+        div.textContent = komenInput.value;
+        komentarList.prepend(div);
+        komenInput.value = "";
+      }
+    }
+
+    function sharePost() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        alert("Link artikel sudah disalin, siap dibagikan!");
+      });
+    }
+  </script>
+</body>
+</html>
+

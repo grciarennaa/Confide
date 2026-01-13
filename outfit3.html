@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidé - Outfit Inspirations for Every Occasion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #111;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      padding: 10px 50px;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      margin-left: 15px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 2px;
+      background: white;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .navbar-nav .active::after {
+      transform: scaleX(1);
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .carousel {
+      flex: 0.9;
+      max-width: 420px;
+    }
+
+    .carousel img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .text-section {
+      flex: 1.2;
+      min-width: 320px;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+	  
+    h5 {
+      font-weight: bold;
+      margin-top: 25px;
+    }
+	  
+    p {
+	  text-align: justify;
+	}
+
+    .interaksi {
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    .like-btn, .share-btn {
+      cursor: pointer;
+      font-size: 1.4rem;
+      margin-right: 20px;
+      user-select: none;
+    }
+
+    .komentar-item {
+      border-bottom: 1px solid #eee;
+      padding: 8px 0;
+    }
+
+   .pagination-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 40px;
+    }
+	  
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2.2rem;
+      }
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="homepage.html">
+        <img src="./image/logo.png" alt="Confidé Logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item"><a class="nav-link" href="homepage.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="trends1.html">TRENDS</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips1.html">TIPS</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">OUTFIT</a></li>
+        <li class="nav-item"><a class="nav-link" href="stories1.html">STORIES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="section-title">Outfit Inspirations for Every Occasion</h1>
+    
+    <div class="opening-section mb-5">
+      <p>
+        Ada kalanya kita pengen tampil lebih bold—sesuatu yang beda dari biasanya, tapi tetap keren dan nggak berlebihan. Mungkin kamu pengen tampil lebih percaya diri, atau cuma ingin “nyalain” mood hari itu dengan outfit yang punya attitude.
+      </p>
+      <p>
+        Nah, gaya Street Spark ini terinspirasi dari gaya jalanan modern: bebas, ekspresif, dan penuh energi. Cocok buat kamu yang suka bereksperimen, berani tampil beda, dan nggak takut jadi pusat perhatian dengan cara yang keren.
+      </p>
+    </div>
+
+    <div class="content">
+      <div id="outfitCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/street spark 1.png" alt="Urban Rebel">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/street spark 2.png" alt="Neon Pulse">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/street spark 3.png" alt="Midnight Groove">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/street spark 4.png" alt="Pop Street Muse">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#outfitCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#outfitCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="text-section">
+        <h2>3. “Street Spark” – Gaya Kasar yang Tetap Keren dan Punya Karakter</h2>
+        <p>
+          Mulai dengan oversized graphic tee dan rok mini denim atau celana kargo hitam — kombinasi yang selalu berhasil kasih kesan street style yang effortless. Tambahkan jaket bomber atau denim jacket buat lapisan ekstra yang bikin tampilannya makin edgy. Untuk sepatu, pilih chunky sneakers atau boots pendek biar vibe-nya semakin kuat.
+        </p>
+        <p>
+          Biar makin standout, tambahkan topi bucket atau kacamata hitam dan tas kecil crossbody. Kamu bisa juga mainin warna dengan detail neon kecil atau aksesori metalik biar look-nya lebih “hidup”. Outfit ini cocok buat kamu yang aktif, penuh energi, dan suka tampil dengan percaya diri di tengah keramaian. Karena gaya jalanan itu bukan soal tren — tapi soal keberanian jadi diri sendiri.
+        </p>
+      </div>
+    </div>
+	  
+    <div class="pagination-buttons">
+      <a href="outfit2.html" class="btn btn-dark">← Prev</a>
+      <a href="outfit4.html" class="btn btn-dark">Next →</a>
+    </div>
+
+    <div class="interaksi">
+      <span class="like-btn" onclick="toggleLike()">❤️ <span id="likeCount">0</span></span>
+      <span class="share-btn" onclick="sharePost()">🔗 Share</span>
+
+      <div class="mt-3">
+        <h5>Comment</h5>
+        <textarea id="komenInput" class="form-control" rows="2" placeholder="Write a comment..."></textarea>
+        <button class="btn btn-dark mt-2" onclick="addComment()">Send</button>
+      </div>
+
+      <div class="komentar-list" id="komentarList"></div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4">
+    <small>&copy; 2025 Confidé. All Rights Reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let liked = false;
+    let likeCount = 0;
+
+    function toggleLike() {
+      liked = !liked;
+      likeCount += liked ? 1 : -1;
+      document.getElementById("likeCount").textContent = likeCount;
+    }
+
+    function addComment() {
+      const komenInput = document.getElementById("komenInput");
+      const komentarList = document.getElementById("komentarList");
+      if (komenInput.value.trim() !== "") {
+        const div = document.createElement("div");
+        div.className = "komentar-item";
+        div.textContent = komenInput.value;
+        komentarList.prepend(div);
+        komenInput.value = "";
+      }
+    }
+
+    function sharePost() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        alert("Link artikel sudah disalin, siap dibagikan!");
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidé - Real Stories, Real Confidence</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #111;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      padding: 10px 50px;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      margin-left: 15px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 2px;
+      background: white;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .navbar-nav .active::after {
+      transform: scaleX(1);
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Image Grid */
+    .image-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    .image-layout img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .image-layout img:first-child {
+      grid-row: 1 / span 2;
+    }
+	  
+	.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-icon img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.social-icon:hover {
+  color: #555;
+}
+
+
+    /* Story Text */
+    h2 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    h5 {
+      font-weight: bold;
+      margin-top: 25px;
+    }
+	  
+	.quote-simple {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  color: #333;
+  border-left: 4px solid #111;
+}
+.quote-simple footer {
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+    /* Interaction Section */
+    .interaksi {
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    .like-btn, .share-btn {
+      cursor: pointer;
+      font-size: 1.4rem;
+      margin-right: 20px;
+      user-select: none;
+    }
+
+    .komentar-item {
+      border-bottom: 1px solid #eee;
+      padding: 8px 0;
+    }
+
+    /* Pagination */
+    .pagination-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .image-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="homepage.html"><img src="./image/logo.png" alt="Confidé Logo"></a>
+    </div>
+    <nav>
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item"><a class="nav-link" href="homepage.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="trends1.html">TRENDS</a></li>
+        <li class="nav-item"><a class="nav-link" href="tips1.html">TIPS</a></li>
+        <li class="nav-item"><a class="nav-link" href="outfit1.html">OUTFIT</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">STORIES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <h1 class="section-title">Real Stories, Real Confidence</h1>
+
+    <div class="image-layout">
+      <img src="./image/bece 3.jpg" alt="Bella Clarissa">
+      <img src="./image/bece 1.jpg" alt="Bella Clarissa">
+      <img src="./image/bece 2.jpg" alt="Bella Clarissa">
+    </div>
+	  
+	<!-- Sosial Media Links -->
+  <div class="social-links text-center mb-5">
+  <a href="https://www.instagram.com/bellaclrs" target="_blank" class="social-icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    <span>@bellaclrs</span>
+  </a>
+  <a href="https://www.tiktok.com/@bellaclrs_" target="_blank" class="social-icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+    <span>@bellaclrs_</span>
+  </a>
+</div>
+
+
+    <div class="story-text">
+      <h2>1. Bella Clarissa      </h2>
+      <p>Bella Clarissa, atau yang akrab disapa Bece, adalah seorang fashion content creator asal Medan yang dikenal dengan gaya personalnya yang edgy namun tetap feminin. Ia sering terlihat memadukan busana dengan sentuhan unik antara sleek dan playful yang menjadikan setiap tampilannya punya karakter kuat. Di balik gayanya yang tegas tapi tetap manis, Bella menyimpan filosofi sederhana: tampil modis bukan tentang siapa yang paling trendi, melainkan siapa yang paling nyaman dengan dirinya sendiri.</p>
+
+      <h5>Latar Belakang</h5>
+      <p>Sejak kecil, Bella sudah tumbuh di lingkungan yang dekat dengan fashion. Ibunya adalah sosok yang sangat memperhatikan gaya dan detail, dan dari sanalah rasa cintanya terhadap mode perlahan terbentuk. Meski awalnya tidak berpikir untuk menjadikan fashion sebagai karier, kebiasaannya bermain dengan outfit dan mengamati gaya orang lain menumbuhkan kepekaan terhadap estetika. Ia belajar bahwa cara berpakaian bisa mencerminkan suasana hati, bahkan membantu membangun kepercayaan diri.</p>
+
+      <h5>Awal Perjalanan</h5>
+      <p>Titik balik Bella terjadi saat masa kuliah, ketika ia mulai mengisi waktu di tengah kesibukan tugas akhir dengan mengedit foto dan video. Dari situ, ia sadar bahwa dirinya punya ketertarikan yang kuat dalam menciptakan sesuatu yang estetik dan bermakna. Ia mulai mengunggah konten fashion di media sosial tanpa ekspektasi apa pun, tapi justru itulah yang membuatnya berkembang. Orang-orang menyukai keaslian gayanya yang apa adanya dan terasa jujur. Dari sinilah kariernya sebagai fashion influencer benar-benar dimulai.</p>
+
+      <h5>Perjalanan Berkembang</h5>
+      <p>Seiring waktu, Bella semakin dikenal lewat konten yang tidak hanya memperlihatkan pakaian, tetapi juga vibe yang ia bawa. Ia tak ragu mengeksplorasi warna, potongan, dan konsep baru dari gaya monokrom yang elegan hingga tampilan cerah yang penuh energi. Gaya berpakaian baginya adalah cermin dari proses mengenal diri: setiap eksperimen kecil membawa pelajaran tentang keberanian dan ketulusan dalam mengekspresikan siapa dirinya. Konsistensi dan dedikasi menjadikannya salah satu sosok inspiratif di dunia fashion digital tanah air.</p>
+     
+	  <h5>Makna Fashion bagi Dirinya</h5>
+	  <p>Bagi Bella, fashion bukan sekadar urusan penampilan, melainkan perpanjangan dari perasaan dan identitas. Ia percaya bahwa pakaian yang kita kenakan bisa membantu kita merasa lebih kuat, lebih percaya diri, dan lebih selaras dengan diri sendiri. Ia sering berkata bahwa konten atau gaya yang baik bukan hanya harus look good, tapi juga feel good. Artinya, fashion harus datang dari kenyamanan hati, bukan dari tuntutan.</p>
+		
+	  <h5>Pesan untuk Pembaca</h5>
+	  <p>Bella mendorong siapa pun yang sedang mencari gaya personalnya untuk tidak takut bereksperimen. Coba warna baru, padukan sesuatu yang belum pernah kamu pakai, atau ubah sedikit cara berpakaianmu hari ini karena dari hal-hal kecil itulah kamu bisa menemukan versi terbaik dirimu. Ia juga menekankan pentingnya punya arah dan tujuan, baik dalam berkarya maupun berpenampilan. Menurutnya, &ldquo;fashion itu proses belajar mencintai diri sendiri, bukan perlombaan untuk jadi paling keren.&rdquo;	  </p>
+	  
+	 <blockquote class="quote-simple"> “Jangan buat konten atau gaya hanya supaya terlihat bagus. Buatlah sesuatu yang feels good. Karena kalau kamu merasa baik, orang lain akan merasakannya juga.”
+  <footer>— Bella Clarissa</footer>
+</blockquote>
+    </div>
+
+    <div class="pagination-buttons">
+      <a href="#" class="btn btn-dark disabled" tabindex="-1" aria-disabled="true">← Prev</a>
+      <a href="stories2.html" class="btn btn-dark">Next →</a>
+    </div>
+
+    <div class="interaksi">
+      <span class="like-btn" onclick="toggleLike()">❤️ <span id="likeCount">0</span></span>
+      <span class="share-btn" onclick="sharePost()">🔗 Share</span>
+
+      <div class="mt-3">
+        <h5>Comment</h5>
+        <textarea id="komenInput" class="form-control" rows="2" placeholder="Write a comment..."></textarea>
+        <button class="btn btn-dark mt-2" onclick="addComment()">Send</button>
+      </div>
+
+      <div class="komentar-list" id="komentarList"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <small>&copy; 2025 Confidé. All Rights Reserved.</small>
+  </footer>
+
+  <!-- Script Interaksi -->
+  <script>
+    let liked = false;
+    let likeCount = 0;
+
+    function toggleLike() {
+      liked = !liked;
+      likeCount += liked ? 1 : -1;
+      document.getElementById("likeCount").textContent = likeCount;
+    }
+
+    function addComment() {
+      const input = document.getElementById("komenInput");
+      const list = document.getElementById("komentarList");
+      if (input.value.trim() !== "") {
+        const div = document.createElement("div");
+        div.className = "komentar-item";
+        div.textContent = input.value;
+        list.prepend(div);
+        input.value = "";
+      }
+    }
+
+    function sharePost() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        alert("Link artikel sudah disalin, siap dibagikan!");
+      });
+    }
+  </script>
+</body>
+</html>
